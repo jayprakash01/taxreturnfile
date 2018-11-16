@@ -1,0 +1,25 @@
+name: 'My Theme'
+description: 'Drupal 8 My Theme'
+core: 8.x
+type: theme
+screenshot: screenshot.png
+
+libraries-override:
+  system/base: false
+
+stylesheets-remove:
+  - core/themes/stable/css/views/views.module.css
+  
+regions:
+  header: 'Top Bar'
+  navigation: 'Main Navigation'  
+  highlighted: 'Highlighted'  
+  content: 'Content'
+  sidebar_first: 'Primary'
+  sidebar_second: 'Secondary'
+  footer: 'footer'
+
+libraries:
+  - mytheme/global-styling
+  - mytheme/bootstrap
+

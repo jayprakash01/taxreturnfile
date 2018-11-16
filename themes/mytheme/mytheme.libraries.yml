@@ -1,0 +1,28 @@
+global-styling:
+  css:
+    theme:
+      css/base.css: {}
+      css/vendor.css: {}
+      css/main.css: {}
+      
+  js:
+    js/modernizr.js: {}
+    js/pace.min.js: {}
+    js/plugins.js: {}
+    js/main.js: {}
+    js/jqBootstrapValidation.js: {}
+    vendor/popper/popper.js: {}
+    vendor/jquery-easing/jquery.easing.min.js: {}
+
+  dependencies:
+    - core/jquery
+
+bootstrap:
+  version: VERSION
+  css:
+    base:
+      bootstrap/css/bootstrap.min.css: { weight: 0 }
+  js:
+    bootstrap/js/bootstrap.min.js: {}
+  dependencies:
+    - core/jquery
